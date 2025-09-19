@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/styles-ejercicio2.css">
+    <title>Iniciar sesion</title>
+</head>
+<body>
+<a href="/" class="btn-regresar">Volver al Inicio</a>
+<div class="card">
+    <h1>Inicio de sesion</h1>
+    <form method="POST">
+        <label for="nombre">Ingresa tu nombre</label>
+        <input type="text" name="usuario"><br>
+        <label for="password">Ingresa tu contrasena</label>
+        <input type="password" name="password"><br>
+        <input type="submit" value="Verificar">
+    </form>
+    {% if usuario is defined and password is defined %}
+        <p>{{mensaje}}</p>
+    {% endif %}
+</div>
+</body>
+</html>

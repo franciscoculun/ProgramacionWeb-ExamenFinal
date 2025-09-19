@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/styles-ejercicio1.css">
+    <title>Calcular compra</title>
+</head>
+<body>
+<a href="/" class="btn-regresar">Volver al Inicio</a>
+<div class="card">
+    <h1>Calculo de Compras</h1>
+    <form method="POST">
+        <label>Ingresa tu nombre</label>
+        <input type="text" name="txtNombre"><br><br>
+        <label>Ingresa tu edad</label>
+        <input type="number" name="Edad"><br><br>
+        <label>Ingresa la cantidad de tarros de pintura comprar</label>
+        <input type="number" name="cant_tarros_pintura"><br><br>
+        <input type="submit" value="Calcular">
+    </form>
+    {% if nombre is defined and edad is defined and cant_tarros is defined %}
+        <P>Nombre del cliente: {{nombre}}</P>
+        <P>Total sin descuento: ${{precio_total}}</P>
+        <p>El descuento es: ${{descuento}}</p>
+        <p>El total a pagar es de: ${{precio_final}}</p>
+    {% endif %}
+</div>
+</body>
+</html>
