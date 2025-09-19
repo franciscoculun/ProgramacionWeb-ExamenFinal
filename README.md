@@ -1,2 +1,2 @@
 # ProgramacionWeb-ExamenFinal
-Examen final de programacionw web con ptyhon y el framework flask
+Examen final de programacion web con ptyhon y el framework flask
